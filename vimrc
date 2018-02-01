@@ -1,3 +1,4 @@
+"""" General
 set nocompatible            " Full-bodied VIM experience
 set shell=bash              " Make sure that sub-shells spawn bash
 syntax on                   " Syntax highlighting
@@ -42,10 +43,12 @@ highlight clear SignColumn  " SignColumn should match background
 highlight clear LineNr      " Current line number row will have same background color in relative mode
 let g:CSApprox_hook_post = ['hi clear SignColumn']
 
+
 """" Colors
 set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
 colorscheme base16-chalk
+
 
 """" Airline
 let g:airline_theme = 'base16_chalk'
@@ -107,3 +110,33 @@ if has('statusline')
 endif
 
 
+"""" Go
+
+" use goimports for formatting
+let g:go_fmt_command = "goimports"
+
+" turn highlighting on
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:syntastic_go_checkers = ['go', 'errcheck']
+
+" Open go doc in vertical window, horizontal, or tab
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
+au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+
+
+"""" Lisp
+let g:slimv_swank_cmd = '! $LISP --load ~/.vim/pack/stuff/start/slimv/slime/start-swank.lisp" &'
+let g:lisp_rainbow=0
+let g:paredit_electric_return=0
+
+autocmd BufNewFile,BufRead *.asd   set filetype=lisp
+
+
+"""" YAML
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
