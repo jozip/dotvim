@@ -16,3 +16,6 @@
 [submodule "pack/stuff/start/ctrlp"]
 	path = pack/stuff/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/stuff/start/vim-go"]
+	path = pack/stuff/start/vim-go
+	url = https://github.com/fatih/vim-go.git
