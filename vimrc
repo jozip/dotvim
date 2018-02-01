@@ -6,6 +6,8 @@ filetype plugin indent on   " Automatically detect file type
 set mouse=a                 " Enable mouse
 set mousehide               " Hide cursor while typing
 scriptencoding utf-8        " Default encoding
+set noswapfile
+set nobackup
 
 if has('clipboard')
     set clipboard=unnamed   " Use system clipboard
