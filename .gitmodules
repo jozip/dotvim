@@ -37,3 +37,6 @@
 [submodule "pack/stuff/start/vim-addon-mw-utils"]
 	path = pack/stuff/start/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/stuff/start/tlib_vim"]
+	path = pack/stuff/start/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
