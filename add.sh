@@ -1,7 +1,5 @@
 #!/bin/sh
 
-PATH=$1
-NAME=$(basename $PATH)
-
-git submodule add https://github.com/$PATH.git pack/stuff/start/$NAME
-git commit
+NAME=$(basename $1)
+git submodule add https://github.com/$1.git pack/stuff/start/$NAME
+git commit -m "Added $NAME"
