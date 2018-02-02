@@ -31,3 +31,6 @@
 [submodule "pack/stuff/start/vimproc"]
 	path = pack/stuff/start/vimproc
 	url = https://github.com/Shougo/vimproc.git
+[submodule "pack/stuff/start/vim-snipmate"]
+	path = pack/stuff/start/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
