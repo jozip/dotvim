@@ -3,9 +3,13 @@ dotvim
 
 Synopsis
 --------
-My hokey VIM-setup
+My hokey setup for Vim 8.
 
 Description
 -----------
-Got a few goodies for Lisp, Haskell and Go development.
-Requires Vim 8+ due to the pack/{}/start/{}-thing
+Just my personal setup for reference. Contains a few
+handy scripts for managing git submodules as packages:
+
+* `add.sh <github user/repo-name path>` -- Add a submodule
+* `remove.sh <repo-name>` -- Remove a submodule
+* `update.sh` -- Updates all submodules
