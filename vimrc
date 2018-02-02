@@ -46,6 +46,12 @@ highlight clear LineNr      " Current line number row will have same background 
 let g:CSApprox_hook_post = ['hi clear SignColumn']
 
 
+"""" Tabularize
+vmap a= :Tabularize /=<CR>
+vmap a; :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
+
+
 """" Colors
 set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
@@ -149,3 +155,5 @@ map <silent> tw :GhcModTypeInsert<CR>
 map <silent> ts :GhcModSplitFunCase<CR>
 map <silent> tq :GhcModType<CR>
 map <silent> te :GhcModTypeClear<CR>
+
+let g:haskell_tabular = 1
