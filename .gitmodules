@@ -25,3 +25,6 @@
 [submodule "pack/stuff/start/ghcmod-vim"]
 	path = pack/stuff/start/ghcmod-vim
 	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "pack/stuff/start/neco-ghc"]
+	path = pack/stuff/start/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc.git
