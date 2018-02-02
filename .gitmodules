@@ -22,3 +22,6 @@
 [submodule "pack/stuff/start/syntastic"]
 	path = pack/stuff/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "pack/stuff/start/ghcmod-vim"]
+	path = pack/stuff/start/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
