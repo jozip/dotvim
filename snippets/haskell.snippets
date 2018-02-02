@@ -5,7 +5,7 @@ snippet case
 snippet do
 
 	  do ${1:undefined}
-	     ${2:undefined}
+		 ${2:undefined}
 
 snippet wh
 
@@ -51,7 +51,7 @@ snippet rec
 
 snippet ff
 	foreign import ccall safe "${1:cfunction}" ${2:name}
-	    :: ${3:function}
+		:: ${3:function}
 
 snippet pra
 	{-# LANGUAGE ${1} #-}
@@ -59,7 +59,7 @@ snippet pra
 snippet case
 
 	case ${1} of
-	     ${2} -> ${3}
+		 ${2} -> ${3}
 
 
 snippet \
@@ -199,15 +199,14 @@ snippet nowarn
 
 snippet box
 	--------------------------------------------------------------------
-	-- |
-	-- Module    :   
-	-- Copyright :  (c) <author> 2016
-	-- License   :  MIT
-	-- Maintainer:  <email>
+	-- Module    :  ${1}
+	-- Copyright :  (c) Johan Persson 2018
+	-- License   :  ISC
+	-- Maintainer:  jzp@bahnhof.se
 	-- Stability :  experimental
 	-- Portability: non-portable
-	--
 	--------------------------------------------------------------------
+
 
 snippet dd
 	deriving (Eq, Ord, Show, Typeable, Data, Generic)
