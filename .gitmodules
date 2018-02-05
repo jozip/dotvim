@@ -40,3 +40,6 @@
 [submodule "pack/stuff/start/tabular"]
 	path = pack/stuff/start/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "pack/stuff/start/ultisnips"]
+	path = pack/stuff/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
