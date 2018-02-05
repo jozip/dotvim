@@ -58,6 +58,15 @@ let base16colorspace=256    " 256 color mode
 colorscheme base16-chalk
 
 
+"""" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
 """" Airline
 let g:airline_theme = 'base16_chalk'
 let g:airline#extensions#tabline#enabled = 1
