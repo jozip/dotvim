@@ -46,6 +46,17 @@ highlight clear LineNr      " Current line number row will have same background 
 let g:CSApprox_hook_post = ['hi clear SignColumn']
 
 
+"""" Ctrl-P
+"" Ignore files that are ignored in git/hg directories
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
+
+
 """" Tabularize
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
