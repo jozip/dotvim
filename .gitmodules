@@ -49,3 +49,6 @@
 [submodule "pack/stuff/start/textformat.vim"]
 	path = pack/stuff/start/textformat.vim
 	url = https://github.com/jozip/textformat.vim.git
+[submodule "pack/stuff/start/vim-orgmode"]
+	path = pack/stuff/start/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode.git
