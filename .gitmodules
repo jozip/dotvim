@@ -52,3 +52,6 @@
 [submodule "pack/stuff/start/vim-orgmode"]
 	path = pack/stuff/start/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
+[submodule "pack/stuff/start/vim-speeddating"]
+	path = pack/stuff/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
