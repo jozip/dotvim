@@ -67,7 +67,7 @@ vmap a- :Tabularize /-><CR>
 """" Colors
 set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
-colorscheme base16-chalk
+colorscheme base16-eighties
 
 
 """" UltiSnips
@@ -175,3 +175,7 @@ map <silent> tq :GhcModType<CR>
 map <silent> te :GhcModTypeClear<CR>
 
 let g:haskell_tabular = 1
+
+
+"""" Javascript
+let g:syntastic_javascript_checkers = ['eslint']
