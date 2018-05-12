@@ -22,9 +22,6 @@
 [submodule "pack/stuff/start/syntastic"]
 	path = pack/stuff/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "pack/stuff/start/neco-ghc"]
-	path = pack/stuff/start/neco-ghc
-	url = https://github.com/eagletmt/neco-ghc.git
 [submodule "pack/stuff/start/vimproc"]
 	path = pack/stuff/start/vimproc
 	url = https://github.com/Shougo/vimproc.git
