@@ -140,12 +140,12 @@ endif
 "au BufWrite * :Autoformat
 noremap <F3> :Autoformat<CR>
 
+
 """" C
 let g:syntastic_c_checkers = ['clang-check']
 
 
 """" Go
-
 " use goimports for formatting
 let g:go_auto_type_info = 1
 " turn highlighting on
@@ -173,15 +173,6 @@ autocmd BufNewFile,BufRead *.asd   set filetype=lisp
 
 """" YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-
-
-"""" Haskell
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
-
-let g:haskell_tabular = 1
 
 
 """" Javascript
