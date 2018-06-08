@@ -170,6 +170,8 @@ let g:paredit_electric_return=0
 
 autocmd BufNewFile,BufRead *.asd   set filetype=lisp
 
+" PicoLisp
+autocmd BufRead,BufNewFile *.l setl ft=picolisp
 
 """" YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
