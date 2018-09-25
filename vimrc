@@ -65,7 +65,6 @@ vmap a- :Tabularize /-><CR>
 
 
 """" Colors
-set t_Co=256
 set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
 colorscheme base16-chalk
