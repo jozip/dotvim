@@ -46,3 +46,6 @@
 [submodule "pack/stuff/start/vim-surround"]
 	path = pack/stuff/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/stuff/start/vim-sensible"]
+	path = pack/stuff/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
