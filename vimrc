@@ -58,25 +58,10 @@ let g:ctrlp_user_command = {
             \ }
 
 
-"""" Tabularize
-vmap a= :Tabularize /=<CR>
-vmap a; :Tabularize /::<CR>
-vmap a- :Tabularize /-><CR>
-
-
 """" Colors
 set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
 colorscheme base16-chalk
-
-
-"""" UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 
 """" Airline
