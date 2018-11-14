@@ -1,11 +1,18 @@
 """" General
 set nocompatible            " Full-bodied VIM experience
+
 set shell=bash              " Make sure that sub-shells spawn bash
+
 syntax on                   " Syntax highlighting
 filetype plugin indent on   " Automatically detect file type
-set mouse=a                 " Enable mouse
-set mousehide               " Hide cursor while typing
+
+if has('mouse')
+  set mouse=a               " Enable mouse
+  set mousehide             " Hide cursor while typing
+endif
+
 scriptencoding utf-8        " Default encoding
+
 set noswapfile
 set nobackup
 
@@ -38,8 +45,8 @@ set smartcase                   " Case sensitive when uc present
 set wildmenu                    " Show list instead of just completing
 set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
-set scrolljump=5                " Lines to scroll when cursor leaves screen
-set scrolloff=3                 " Minimum lines to keep above and below cursor
+set scrolljump=3                " Lines to scroll when cursor leaves screen
+set scrolloff=2                 " Minimum lines to keep above and below cursor
 
 set cursorline              " Highlight current line
 highlight clear SignColumn  " SignColumn should match background
