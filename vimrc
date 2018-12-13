@@ -176,3 +176,7 @@ if executable(local_eslint)
 endif
 
 
+
+"""" Rust
+let g:rustfmt_autosave = 1
+
