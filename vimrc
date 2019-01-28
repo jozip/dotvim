@@ -64,6 +64,7 @@ let g:ctrlp_user_command = {
             \ 'fallback': 'find %s -type f'
             \ }
 
+nnoremap <leader>. :CtrlPTag<cr>
 
 """" Colors
 set background=dark         " Dark theme
@@ -174,7 +175,6 @@ endif
 if executable(local_eslint)
     let g:syntastic_javascript_eslint_exec = local_eslint
 endif
-
 
 
 """" Rust
