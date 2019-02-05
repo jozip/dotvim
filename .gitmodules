@@ -55,3 +55,6 @@
 [submodule "pack/stuff/start/vim-prettier"]
 	path = pack/stuff/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule "pack/stuff/start/vim-pug"]
+	path = pack/stuff/start/vim-pug
+	url = https://github.com/digitaltoad/vim-pug.git
