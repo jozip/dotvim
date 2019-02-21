@@ -58,3 +58,6 @@
 [submodule "pack/stuff/start/vim-pug"]
 	path = pack/stuff/start/vim-pug
 	url = https://github.com/digitaltoad/vim-pug.git
+[submodule "pack/stuff/start/yajs.vim"]
+	path = pack/stuff/start/yajs.vim
+	url = https://github.com/othree/yajs.vim.git
