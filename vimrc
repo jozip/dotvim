@@ -35,7 +35,7 @@ set linespace=0                 " No extra spaces between rows
 set nu                          " Line numbers on
 set rnu                         " Relative line numbers on
 set lbr                         " Line break word boundary
-set nowrap                      " Don't wrap lines
+"set nowrap                      " Don't wrap lines
 set showmatch                   " Show matching brackets/parenthesis
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
