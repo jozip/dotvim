@@ -179,7 +179,7 @@ endif
 
 """" Rust
 let g:rustfmt_autosave = 1
-
+let g:rust_clip_command = 'xclip -selection clipboard'
 
 """" Prettier
 let g:prettier#autoformat = 0
