@@ -1,6 +1,9 @@
 """" General
 set nocompatible            " Full-bodied VIM experience
 
+set modelines=0             " Disable modelines due to security concerns
+set nomodeline              "
+
 set shell=bash              " Make sure that sub-shells spawn bash
 
 syntax on                   " Syntax highlighting
