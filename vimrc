@@ -1,8 +1,9 @@
 """" General
 set nocompatible            " Full-bodied VIM experience
 
-set modelines=0             " Disable modelines due to security concerns
-set nomodeline              "
+" Disable modelines due to security concerns
+set modelines=0
+set nomodeline
 
 set shell=bash              " Make sure that sub-shells spawn bash
 
@@ -16,6 +17,7 @@ endif
 
 scriptencoding utf-8        " Default encoding
 
+" Don't bother with swap- and backup-files
 set noswapfile
 set nobackup
 
