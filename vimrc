@@ -137,7 +137,7 @@ endif
 """" Autoformatter
 "au BufWrite * :Autoformat
 noremap <F3> :Autoformat<CR>
-
+"let g:autoformat_verbosemode=1
 
 """" C
 let g:syntastic_c_checkers = ['clang-check']
