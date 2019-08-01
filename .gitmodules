@@ -64,3 +64,6 @@
 [submodule "pack/stuff/start/webapi-vim"]
 	path = pack/stuff/start/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+[submodule "pack/stuff/start/vim-racket"]
+	path = pack/stuff/start/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
