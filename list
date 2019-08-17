@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for PACKAGE in $(ls pack/stuff/start) ; do
+    echo $PACKAGE
+done

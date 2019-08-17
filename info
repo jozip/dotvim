@@ -1,0 +1,3 @@
+#!/bin/sh
+
+less `find pack/stuff/start/$1 -type f -iname "*readme*"`
