@@ -189,3 +189,10 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 """" Prettier
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+""" Racket
+let g:syntastic_enable_racket_racket_checker = 1
+let g:syntastic_racket_checkers = ["code-ayatollah"]
+au BufReadPost *.rkt,*.rktl set filetype=racket
+au filetype racket set lisp
+au filetype racket set autoindent
