@@ -139,14 +139,15 @@ endif
 noremap <F3> :Autoformat<CR>
 "let g:autoformat_verbosemode=1
 
+
 """" C
 let g:syntastic_c_checkers = ['clang-check']
 
 
 """" Lisp
 "let g:slimv_swank_cmd = '! $LISP --load ~/.vim/pack/stuff/start/slimv/slime/start-swank.lisp" &'
-let g:lisp_rainbow=0
-let g:paredit_electric_return=0
+"let g:lisp_rainbow=1
+"let g:paredit_electric_return=0
 
 
 """" YAML
@@ -168,9 +169,11 @@ endif
 let g:rustfmt_autosave = 1
 let g:rust_clip_command = 'xclip -selection clipboard'
 
+
 """" Prettier
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
 
 """ Racket
 let g:syntastic_enable_racket_racket_checker = 1
@@ -178,3 +181,5 @@ let g:syntastic_racket_checkers = ["code-ayatollah"]
 au BufReadPost *.rkt,*.rktl set filetype=racket
 au filetype racket set lisp
 au filetype racket set autoindent
+autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
+let g:rainbow_active = 1
