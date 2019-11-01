@@ -144,7 +144,7 @@ let g:syntastic_c_checkers = ['clang-check']
 
 
 """" Lisp
-let g:slimv_swank_cmd = '! $LISP --load ~/.vim/pack/stuff/start/slimv/slime/start-swank.lisp" &'
+"let g:slimv_swank_cmd = '! $LISP --load ~/.vim/pack/stuff/start/slimv/slime/start-swank.lisp" &'
 let g:lisp_rainbow=0
 let g:paredit_electric_return=0
 
