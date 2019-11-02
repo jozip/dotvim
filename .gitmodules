@@ -76,3 +76,6 @@
 [submodule "pack/stuff/start/vim-sexp-mappings-for-regular-people"]
 	path = pack/stuff/start/vim-sexp-mappings-for-regular-people
 	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people.git
+[submodule "pack/stuff/start/vim-sexp"]
+	path = pack/stuff/start/vim-sexp
+	url = https://github.com/guns/vim-sexp.git
