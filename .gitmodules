@@ -73,3 +73,6 @@
 [submodule "pack/stuff/start/scribble.vim"]
 	path = pack/stuff/start/scribble.vim
 	url = https://github.com/vim-scripts/scribble.vim.git
+[submodule "pack/stuff/start/vim-repeat"]
+	path = pack/stuff/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
