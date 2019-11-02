@@ -64,9 +64,6 @@
 [submodule "pack/stuff/start/vim-lion"]
 	path = pack/stuff/start/vim-lion
 	url = https://github.com/tommcdo/vim-lion.git
-[submodule "pack/stuff/start/paredit.vim"]
-	path = pack/stuff/start/paredit.vim
-	url = https://github.com/vim-scripts/paredit.vim.git
 [submodule "pack/stuff/start/rainbow"]
 	path = pack/stuff/start/rainbow
 	url = https://github.com/luochen1990/rainbow.git
