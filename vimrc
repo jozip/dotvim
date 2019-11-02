@@ -57,7 +57,7 @@ set cursorline              " Highlight current line
 highlight clear SignColumn  " SignColumn should match background
 highlight clear LineNr      " Current line number row will have same background color in relative mode
 let g:CSApprox_hook_post = ['hi clear SignColumn']
-
+let mapleader=","
 
 """" Ctrl-P
 "" Ignore files that are ignored in git/hg directories
