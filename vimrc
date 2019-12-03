@@ -183,3 +183,4 @@ au filetype racket set lisp
 au filetype racket set autoindent
 autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
 let g:rainbow_active = 1
+let g:sexp_enable_insert_mode_mappings = 0
