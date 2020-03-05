@@ -165,11 +165,6 @@ if executable(local_eslint)
 endif
 
 
-"""" Rust
-let g:rustfmt_autosave = 1
-let g:rust_clip_command = 'xclip -selection clipboard'
-
-
 """" Prettier
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
@@ -183,4 +178,4 @@ au filetype racket set lisp
 au filetype racket set autoindent
 autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
 let g:rainbow_active = 1
-let g:sexp_enable_insert_mode_mappings = 0
+"let g:sexp_enable_insert_mode_mappings = 0
