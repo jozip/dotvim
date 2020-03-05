@@ -11,8 +11,8 @@ syntax on                   " Syntax highlighting
 filetype plugin indent on   " Automatically detect file type
 
 if has('mouse')
-  set mouse=a               " Enable mouse
-  set mousehide             " Hide cursor while typing
+    set mouse=a               " Enable mouse
+    set mousehide             " Hide cursor while typing
 endif
 
 scriptencoding utf-8        " Default encoding
