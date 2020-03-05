@@ -43,9 +43,6 @@
 [submodule "pack/stuff/start/vim-sensible"]
 	path = pack/stuff/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "pack/stuff/start/rust.vim"]
-	path = pack/stuff/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
 [submodule "pack/stuff/start/vim-prettier"]
 	path = pack/stuff/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier.git
