@@ -72,13 +72,13 @@ let g:ctrlp_user_command = {
 nnoremap <leader>. :CtrlPTag<cr>
 
 """" Colors
-set background=dark         " Dark theme
+set background=light         " Dark theme
 let base16colorspace=256    " 256 color mode
-colorscheme base16-chalk
+colorscheme base16-tomorrow
 
 
 """" Airline
-let g:airline_theme = 'base16_chalk'
+let g:airline_theme = 'base16_tomorrow'
 let g:airline#extensions#tabline#enabled = 1
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -144,12 +144,6 @@ noremap <F3> :Autoformat<CR>
 let g:syntastic_c_checkers = ['clang-check']
 
 
-"""" Lisp
-"let g:slimv_swank_cmd = '! $LISP --load ~/.vim/pack/stuff/start/slimv/slime/start-swank.lisp" &'
-"let g:lisp_rainbow=1
-"let g:paredit_electric_return=0
-
-
 """" YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
@@ -169,13 +163,3 @@ endif
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
-
-""" Racket
-let g:syntastic_enable_racket_racket_checker = 1
-let g:syntastic_racket_checkers = ["code-ayatollah"]
-au BufReadPost *.rkt,*.rktl set filetype=racket
-au filetype racket set lisp
-au filetype racket set autoindent
-autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
-let g:rainbow_active = 1
-"let g:sexp_enable_insert_mode_mappings = 0
