@@ -73,3 +73,6 @@
 [submodule "pack/stuff/start/vim-sexp"]
 	path = pack/stuff/start/vim-sexp
 	url = https://github.com/guns/vim-sexp.git
+[submodule "pack/stuff/start/vim-racket"]
+	path = pack/stuff/start/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
