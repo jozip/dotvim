@@ -70,3 +70,6 @@
 [submodule "pack/stuff/start/vim-slime"]
 	path = pack/stuff/start/vim-slime
 	url = https://github.com/jpalardy/vim-slime.git
+[submodule "pack/stuff/start/vim-rainbow"]
+	path = pack/stuff/start/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow.git
