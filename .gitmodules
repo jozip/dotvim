@@ -64,3 +64,6 @@
 [submodule "pack/stuff/start/vim-racket"]
 	path = pack/stuff/start/vim-racket
 	url = https://github.com/wlangstroth/vim-racket.git
+[submodule "pack/stuff/start/vim-airline"]
+	path = pack/stuff/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
