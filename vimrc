@@ -5,7 +5,7 @@ set nocompatible            " Full-bodied VIM experience
 set modelines=0
 set nomodeline
 
-set shell=bash              " Make sure that sub-shells spawn bash
+set shell=zsh               " Make sure that sub-shells spawn zsh
 
 syntax on                   " Syntax highlighting
 filetype plugin indent on   " Automatically detect file type
@@ -53,7 +53,7 @@ set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
 set scrolljump=3                " Lines to scroll when cursor leaves screen
 set scrolloff=2                 " Minimum lines to keep above and below cursor
 
-set cursorline              " Highlight current line
+"set cursorline              " Highlight current line
 highlight clear SignColumn  " SignColumn should match background
 highlight clear LineNr      " Current line number row will have same background color in relative mode
 let g:CSApprox_hook_post = ['hi clear SignColumn']
@@ -74,44 +74,44 @@ nnoremap <leader>. :CtrlPTag<cr>
 """" Colors
 set background=light         " Dark theme
 let base16colorspace=256    " 256 color mode
-colorscheme base16-tomorrow
+colorscheme base16-unikitty-light
 
 
 """" Airline
-let g:airline_theme = 'base16_tomorrow'
-let g:airline#extensions#tabline#enabled = 1
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+"let g:airline_theme = 'base16_tomorrow'
+"let g:airline#extensions#tabline#enabled = 1
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
 
 "" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
 
 "" powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
 
 "" tabline
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
+"let g:airline#extensions#tabline#left_sep = ''
+"let g:airline#extensions#tabline#left_alt_sep = ''
+"let g:airline#extensions#tabline#right_sep = ''
+"let g:airline#extensions#tabline#right_alt_sep = ''
 
 if has('cmdline_info')
     set ruler                   " Show the ruler
@@ -157,6 +157,17 @@ endif
 if executable(local_eslint)
     let g:syntastic_javascript_eslint_exec = local_eslint
 endif
+
+
+"""" Racket
+let g:syntastic_enable_racket_racket_checker = 1
+"let g:syntastic_racket_checkers = ["code-ayatollah"]
+au BufReadPost *.rkt,*.rktl set filetype=racket
+au filetype racket set lisp
+au filetype racket set autoindent
+autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
+let g:rainbow_active = 0
+let g:sexp_enable_insert_mode_mappings = 0
 
 
 """" Prettier
