@@ -52,9 +52,6 @@
 [submodule "pack/stuff/start/webapi-vim"]
 	path = pack/stuff/start/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
-[submodule "pack/stuff/start/vim-lion"]
-	path = pack/stuff/start/vim-lion
-	url = https://github.com/tommcdo/vim-lion.git
 [submodule "pack/stuff/start/rainbow"]
 	path = pack/stuff/start/rainbow
 	url = https://github.com/luochen1990/rainbow.git
