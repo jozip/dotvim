@@ -73,3 +73,6 @@
 [submodule "pack/stuff/start/vim-rainbow"]
 	path = pack/stuff/start/vim-rainbow
 	url = https://github.com/frazrepo/vim-rainbow.git
+[submodule "pack/stuff/start/fmt.vim"]
+	path = pack/stuff/start/fmt.vim
+	url = https://github.com/aonemd/fmt.vim.git
