@@ -25,9 +25,6 @@
 [submodule "pack/stuff/start/editorconfig-vim"]
 	path = pack/stuff/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "pack/stuff/start/vim-autoformat"]
-	path = pack/stuff/start/vim-autoformat
-	url = https://github.com/chiel92/vim-autoformat.git
 [submodule "pack/stuff/start/pgsql.vim"]
 	path = pack/stuff/start/pgsql.vim
 	url = https://github.com/exu/pgsql.vim.git
