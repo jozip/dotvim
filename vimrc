@@ -40,7 +40,7 @@ set linespace=0                 " No extra spaces between rows
 set nu                          " Line numbers on
 set rnu                         " Relative line numbers on
 set lbr                         " Line break word boundary
-"set nowrap                      " Don't wrap lines
+set nowrap                      " Don't wrap lines
 set showmatch                   " Show matching brackets/parenthesis
 set incsearch                   " Find as you type search
 set hlsearch                    " Highlight search terms
@@ -162,12 +162,17 @@ endif
 """" Racket
 let g:syntastic_enable_racket_racket_checker = 1
 "let g:syntastic_racket_checkers = ["code-ayatollah"]
-au BufReadPost *.rkt,*.rktl set filetype=racket
+au BufReadPost *.rkt,*.rktl,*.scrbl set filetype=racket
 au filetype racket set lisp
 au filetype racket set autoindent
 autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
-let g:rainbow_active = 0
-let g:sexp_enable_insert_mode_mappings = 0
+let g:formatdef_racket = '"raco fmt"'
+let g:formatters_racket = ['racket']
+let g:rainbow_active = 1
+let g:sexp_enable_insert_mode_mappings = 1
+let g:sexp_insert_after_wrap = 0
+let g:rainbow_guifgs = ['blue', 'darkgreen', 'orange', 'red', 'darkmagenta']
+let g:rainbow_ctermfgs = ['blue', 'darkgreen', 'darkyellow', 'red', 'darkmagenta']
 
 
 """" Prettier
