@@ -63,11 +63,11 @@ let mapleader=","
 "" Ignore files that are ignored in git/hg directories
 let g:ctrlp_user_command = {
             \ 'types': {
-            \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
-            \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-            \ },
-            \ 'fallback': 'find %s -type f'
-            \ }
+                \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+                \ },
+                \ 'fallback': 'find %s -type f'
+                \ }
 
 nnoremap <leader>. :CtrlPTag<cr>
 
@@ -166,7 +166,7 @@ au BufReadPost *.rkt,*.rktl,*.scrbl set filetype=racket
 au filetype racket set lisp
 au filetype racket set autoindent
 autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
-let g:formatdef_racket = '"raco fmt"'
+let g:formatdef_racket = '"scmindent.rkt"'
 let g:formatters_racket = ['racket']
 let g:rainbow_active = 1
 let g:sexp_enable_insert_mode_mappings = 1
@@ -176,6 +176,8 @@ let g:rainbow_ctermfgs = ['blue', 'darkgreen', 'darkyellow', 'red', 'darkmagenta
 
 
 """" Prettier
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+"let g:prettier#autoformat = 0
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
+" GameBoy Assembly
+au BufRead,BufNewFile *.ds set filetype=rgbds
