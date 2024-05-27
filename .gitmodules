@@ -73,3 +73,6 @@
 [submodule "pack/stuff/start/vim-autoformat"]
 	path = pack/stuff/start/vim-autoformat
 	url = https://github.com/vim-autoformat/vim-autoformat.git
+[submodule "pack/stuff/start/slimv"]
+	path = pack/stuff/start/slimv
+	url = https://github.com/kovisoft/slimv.git
