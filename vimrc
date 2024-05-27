@@ -160,19 +160,19 @@ endif
 
 
 """" Racket
-let g:syntastic_enable_racket_racket_checker = 1
+"let g:syntastic_enable_racket_racket_checker = 1
 "let g:syntastic_racket_checkers = ["code-ayatollah"]
-au BufReadPost *.rkt,*.rktl,*.scrbl set filetype=racket
-au filetype racket set lisp
-au filetype racket set autoindent
-autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
-let g:formatdef_racket = '"scmindent.rkt"'
-let g:formatters_racket = ['racket']
-let g:rainbow_active = 1
-let g:sexp_enable_insert_mode_mappings = 1
-let g:sexp_insert_after_wrap = 0
-let g:rainbow_guifgs = ['blue', 'darkgreen', 'orange', 'red', 'darkmagenta']
-let g:rainbow_ctermfgs = ['blue', 'darkgreen', 'darkyellow', 'red', 'darkmagenta']
+"au BufReadPost *.rkt,*.rktl,*.scrbl set filetype=racket
+"au filetype racket set lisp
+"au filetype racket set autoindent
+"autocmd filetype lisp,scheme,racket setlocal equalprg=scmindent.rkt
+"let g:formatdef_racket = '"scmindent.rkt"'
+"let g:formatters_racket = ['racket']
+"let g:rainbow_active = 1
+"let g:sexp_enable_insert_mode_mappings = 1
+"let g:sexp_insert_after_wrap = 0
+"let g:rainbow_guifgs = ['blue', 'darkgreen', 'orange', 'red', 'darkmagenta']
+"let g:rainbow_ctermfgs = ['blue', 'darkgreen', 'darkyellow', 'red', 'darkmagenta']
 
 
 """" Prettier
