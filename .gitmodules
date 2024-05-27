@@ -79,6 +79,3 @@
 [submodule "pack/stuff/start/vim-erlang-runtime"]
 	path = pack/stuff/start/vim-erlang-runtime
 	url = https://github.com/vim-erlang/vim-erlang-runtime.git
-[submodule "pack/stuff/start/vim-erlang-compiler"]
-	path = pack/stuff/start/vim-erlang-compiler
-	url = https://github.com/vim-erlang/vim-erlang-compiler.git
