@@ -76,6 +76,3 @@
 [submodule "pack/stuff/start/vim-erlang-tags"]
 	path = pack/stuff/start/vim-erlang-tags
 	url = https://github.com/vim-erlang/vim-erlang-tags.git
-[submodule "pack/stuff/start/vim-erlang-runtime"]
-	path = pack/stuff/start/vim-erlang-runtime
-	url = https://github.com/vim-erlang/vim-erlang-runtime.git
