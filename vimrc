@@ -179,10 +179,12 @@ endif
 "let g:prettier#autoformat = 0
 "autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
-" Slimv
+"""" Lisp
 let g:slimv_swank_cmd = "!ros -e '(ql:quickload :swank) (swank:create-server)' wait &"
 let g:slimv_lisp = 'ros run'
 let g:slimv_impl = 'sbcl'
+let g:lisp_rainbow = 1
 
-" GameBoy Assembly
+
+"""" GameBoy Assembly
 au BufRead,BufNewFile *.ds set filetype=rgbds
