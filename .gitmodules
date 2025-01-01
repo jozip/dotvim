@@ -76,3 +76,6 @@
 [submodule "pack/stuff/start/slimv"]
 	path = pack/stuff/start/slimv
 	url = https://github.com/kovisoft/slimv.git
+[submodule "pack/stuff/start/vim-asm_ca65"]
+	path = pack/stuff/start/vim-asm_ca65
+	url = https://github.com/maxbane/vim-asm_ca65.git
