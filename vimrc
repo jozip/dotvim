@@ -149,14 +149,14 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 
 """" Javascript
-let g:syntastic_javascript_checkers = ['eslint']
-let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
-if matchstr(local_eslint, "^\/\\w") == ''
-    let local_eslint = getcwd() . "/" . local_eslint
-endif
-if executable(local_eslint)
-    let g:syntastic_javascript_eslint_exec = local_eslint
-endif
+"let g:syntastic_javascript_checkers = ['eslint']
+"let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
+"if matchstr(local_eslint, "^\/\\w") == ''
+"    let local_eslint = getcwd() . "/" . local_eslint
+"endif
+"if executable(local_eslint)
+"    let g:syntastic_javascript_eslint_exec = local_eslint
+"endif
 
 
 """" Racket
@@ -188,3 +188,6 @@ let g:lisp_rainbow = 1
 
 """" GameBoy Assembly
 au BufRead,BufNewFile *.ds set filetype=rgbds
+
+"""" ca65 Assembly
+au BufNewFile,BufRead *.asm,*.inc set ft=asm_ca65
