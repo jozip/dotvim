@@ -72,9 +72,9 @@ let g:ctrlp_user_command = {
 nnoremap <leader>. :CtrlPTag<cr>
 
 """" Colors
-set background=light         " Dark theme
+set background=dark         " Dark theme
 let base16colorspace=256    " 256 color mode
-colorscheme base16-unikitty-light
+colorscheme base16-unikitty-dark
 
 
 """" Airline
