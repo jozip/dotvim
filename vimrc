@@ -180,14 +180,16 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 "autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 """" Lisp
-let g:slimv_swank_cmd = "!ros -e '(ql:quickload :swank) (swank:create-server)' wait &"
-let g:slimv_lisp = 'ros run'
+let g:slimv_swank_cmd = '! tmux new -d -n REPL-SBCL "sbcl --load /home/jzp/quicklisp/dists/quicklisp/software/slime-v2.30/start-swank.lisp"'
+"let g:slimv_swank_cmd = '! xterm -e sbcl --load /home/jzp/quicklisp/dists/quicklisp/software/slime-v2.30/start-swank.lisp &'
+let g:slimv_lisp = 'sbcl'
 let g:slimv_impl = 'sbcl'
 let g:lisp_rainbow = 1
 
 
 """" GameBoy Assembly
 au BufRead,BufNewFile *.ds set filetype=rgbds
+autocmd filetype rgbds nnoremap <F5> :w<CR> :make<CR>
 
 """" ca65 Assembly
 au BufNewFile,BufRead *.asm,*.inc set ft=asm_ca65
