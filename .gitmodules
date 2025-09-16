@@ -82,3 +82,6 @@
 [submodule "pack/stuff/start/vim-arduino"]
 	path = pack/stuff/start/vim-arduino
 	url = https://github.com/stevearc/vim-arduino.git
+[submodule "pack/stuff/start/zig.vim"]
+	path = pack/stuff/start/zig.vim
+	url = https://github.com/ziglang/zig.vim.git
