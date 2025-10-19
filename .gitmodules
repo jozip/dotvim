@@ -85,3 +85,6 @@
 [submodule "pack/stuff/start/zig.vim"]
 	path = pack/stuff/start/zig.vim
 	url = https://github.com/ziglang/zig.vim.git
+[submodule "pack/stuff/start/vim-erlang-runtime"]
+	path = pack/stuff/start/vim-erlang-runtime
+	url = https://github.com/vim-erlang/vim-erlang-runtime.git
