@@ -141,12 +141,14 @@ noremap <F3> :Autoformat<CR>
 
 
 """" C
+"au BufNewFile,BufRead *.ino set ft=cpp
 let g:syntastic_c_checkers = ['clang-check']
 
 
 """" YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+"""" Arduino
 
 """" Javascript
 "let g:syntastic_javascript_checkers = ['eslint']
