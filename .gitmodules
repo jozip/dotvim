@@ -88,3 +88,6 @@
 [submodule "pack/stuff/start/vim-erlang-runtime"]
 	path = pack/stuff/start/vim-erlang-runtime
 	url = https://github.com/vim-erlang/vim-erlang-runtime.git
+[submodule "pack/stuff/start/vim-lsp"]
+	path = pack/stuff/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
