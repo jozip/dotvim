@@ -10,8 +10,8 @@ set guifont=Hack\ Regular\ 10
 
 set cursorline              " Highlight current line
 set background=light         " Dark theme
-let base16colorspace=256    " 256 color mode
-colorscheme base16-solarized-light
+"let base16colorspace=256    " 256 color mode
+"colorscheme selenized_
 
 """" Airline
 let g:airline_theme = 'base16_solarized_light'

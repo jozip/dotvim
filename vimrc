@@ -71,13 +71,8 @@ let g:ctrlp_user_command = {
 nnoremap <leader>. :CtrlPTag<cr>
 
 """" Colors
-"" These are set in gvimrc
-"set background=dark         " Dark theme
-"let base16colorspace=256    " 256 color mode
-"colorscheme base16-unikitty-dark
-
-
-
+set background=light
+colorscheme selenized
 
 """" Autoformatter
 "au BufWrite * :Autoformat
